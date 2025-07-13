@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电工张的博客 | 电气知识分享</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+     <!-- 新增的B站粉丝计数模块 -->
+    <div class="fans-counter">
+        <div class="container">
+            <div class="counter-title">
+                <i class="fas fa-users"></i>
+                <span>B站粉丝数</span>
+            </div>
+            <div class="counter-display">
+                <div class="counter-value">
+                    <span id="fansCount">加载中<span class="loader"></span></span>
+                </div>
+                <div class="counter-label">
+                    <span class="bilibili-logo"></span>UP主: 电工张
+                </div>
+            </div>
+            <div class="counter-refresh">
+                <button id="refreshBtn" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">
+                    <i class="fas fa-sync-alt"></i> 刷新
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新增科技感背景 -->
+    <div class="tech-background"></div>
+    
+    <div class="container">
+        <header>
+            <h1>电工张的博客</h1>
+            <p class="subtitle">探索电气工程核心技术与行业前沿 · 分享电力系统实践知识与专业洞见</p>
+        </header>
+        
+        <div class="content-section">
+            <div class="card">
+                <h2 class="card-title">电力通信常见协议</h2>
+                <ul class="protocol-list">
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">IEC 60870-5-104</div>
+                            <div class="protocol-desc">电网监控系统标准通信协议，支持TCP/IP网络传输</div>
+                        </div>
+                    </li>
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">DNP3</div>
+                            <div class="protocol-desc">分布式网络协议，SCADA系统核心通信标准</div>
+                        </div>
+                    </li>
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">IEC 61850</div>
+                            <div class="protocol-desc">数字化变电站统一通信架构与数据模型标准</div>
+                        </div>
+                    </li>
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">Modbus TCP</div>
+                            <div class="protocol-desc">工业控制领域应用最广泛的以太网通信协议</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title">从零开始学104协议</h2>
+                <ul class="protocol-list">
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">协议架构解析</div>
+                            <div class="protocol-desc">深入理解APCI结构与三种报文格式</div>
+                        </div>
+                    </li>
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">报文解码实战</div>
+                            <div class="protocol-desc">Wireshark捕获与分析实际通信报文</div>
+                        </div>
+                    </li>
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">安全加固方案</div>
+                            <div class="protocol-desc">基于IPSec的104协议安全通信实践</div>
+                        </div>
+                    </li>
+                    <li class="protocol-item">
+                        <div class="protocol-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div>
+                            <div class="protocol-name">冗余架构设计</div>
+                            <div class="protocol-desc">主备通道切换与热备份系统实现</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 新增图片区域 -->
+        <div class="feature-section">
+            <h2 class="feature-title">电力系统通信技术演进</h2>
+            <p class="feature-text">现代电网正经历数字化革命，从IPv6统一寻址系统到EPDT电力专网技术，通信架构的升级为智能电网提供核心支撑。新一代通信系统融合5G、边缘计算与时间敏感网络(TSN)技术，实现微秒级精准控制。</p>
+            
+            <!-- 电力科技感图片展示 -->
+            <div style="max-width: 800px; margin: 50px auto 30px; border-radius: 15px; overflow: hidden; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);">
+                <img src="1.png" 
+                     alt="未来电网科技概念图：高压电塔与城市天际线融合"
+                     style="width: 100%; display: block; border: 1px solid rgba(100, 255, 218, 0.2);">
+                <div class="image-caption">未来电网科技概念图</div>
+            </div>
+            
+            <a href="#" class="btn">探索智能电网通信技术</a>
+        </div>
+        <footer>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2025 电工张的博客 | 聚焦电力系统前沿技术</p>
+            <p style="margin-top: 12px; font-size: 0.9rem; opacity: 0.7;">本网站采用符合新媒体授权要求的电力主题图片素材</p>
+        </footer>
+    </div>
+    <!-- 新增的访问量统计和点赞模块 -->
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-eye"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">博客访问量</div>
+                <div class="stat-value" id="visitCount">1024</div>
+            </div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-label">点赞数</div>
+                <div class="stat-value" id="likeCount">86</div>
+            </div>
+            <button class="like-btn" id="likeButton">
+                <i class="fas fa-thumbs-up"></i>
+                <span>点赞</span>
+            </button>
+        </div>
+    <script>
+        // 获取B站粉丝数
+        async function fetchBilibiliFans() {
+            const fansCountElement = document.getElementById('fansCount');
+            const refreshBtn = document.getElementById('refreshBtn');
+            
+            try {
+                // 显示加载状态
+                fansCountElement.innerHTML = '加载中<span class="loader"></span>';
+                refreshBtn.disabled = true;
+                
+                // 通过Node.js代理服务器请求数据
+                const response = await fetch('http://localhost:3000/bilibili-fans');
+                const data = await response.json();
+                
+                if (data.code === 0 && data.data) {
+                    const fansCount = data.data.follower;
+                    // 格式化数字，添加逗号分隔
+                    fansCountElement.textContent = fansCount.toLocaleString();
+                    
+                    // 添加动画效果
+                    fansCountElement.style.opacity = 0;
+                    setTimeout(() => {
+                        fansCountElement.style.transition = 'opacity 0.5s ease';
+                        fansCountElement.style.opacity = 1;
+                    }, 100);
+                } else {
+                    throw new Error('获取粉丝数失败');
+                }
+            } catch (error) {
+                console.error('获取B站粉丝数出错:', error);
+                fansCountElement.innerHTML = '<span style="color:#ff6b6b">获取失败</span>';
+            } finally {
+                refreshBtn.disabled = false;
+            }
+        }
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 首次加载获取粉丝数
+            fetchBilibiliFans();
+            
+            // 添加刷新按钮事件
+            document.getElementById('refreshBtn').addEventListener('click', fetchBilibiliFans);
+        });
+
+        // 访问量统计和点赞功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const visitCountElement = document.getElementById('visitCount');
+            const likeCountElement = document.getElementById('likeCount');
+            const likeButton = document.getElementById('likeButton');
+            
+            // 初始访问量（从localStorage获取或设置默认值）
+            let visitCount = localStorage.getItem('visitCount') || 1024;
+            let likeCount = localStorage.getItem('likeCount') || 86;
+            
+            visitCountElement.textContent = formatNumber(visitCount);
+            likeCountElement.textContent = formatNumber(likeCount);
+            
+            // 模拟访问量增长
+            setInterval(() => {
+                // 每次增加1-3的随机访问量
+                const increment = Math.floor(Math.random() * 3) + 1;
+                visitCount = parseInt(visitCount) + increment;
+                visitCountElement.textContent = formatNumber(visitCount);
+                localStorage.setItem('visitCount', visitCount);
+                
+                // 添加脉冲动画效果
+                visitCountElement.classList.add('pulse');
+                setTimeout(() => {
+                    visitCountElement.classList.remove('pulse');
+                }, 500);
+            }, 3000);
+            
+            // 点赞功能
+            likeButton.addEventListener('click', function() {
+                // 增加点赞数
+                likeCount = parseInt(likeCount) + 1;
+                likeCountElement.textContent = formatNumber(likeCount);
+                localStorage.setItem('likeCount', likeCount);
+                
+                // 添加动画效果
+                likeCountElement.classList.add('pulse');
+                setTimeout(() => {
+                    likeCountElement.classList.remove('pulse');
+                }, 500);
+                
+                // 禁用按钮5秒
+                likeButton.disabled = true;
+                likeButton.innerHTML = '<i class="fas fa-clock"></i><span>冷却中</span>';
+                
+                // 倒计时
+                let seconds = 5;
+                const countdown = setInterval(() => {
+                    seconds--;
+                    if (seconds <= 0) {
+                        clearInterval(countdown);
+                        likeButton.disabled = false;
+                        likeButton.innerHTML = '<i class="fas fa-thumbs-up"></i><span>点赞</span>';
+                    } else {
+                        likeButton.innerHTML = `<i class="fas fa-clock"></i><span>${seconds}s</span>`;
+                    }
+                }, 1000);
+            });
+            
+            // 格式化数字显示（添加逗号分隔）
+            function formatNumber(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+        });
+    </script>
+</body>
+</html>
